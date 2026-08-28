@@ -2,13 +2,13 @@
   "name": "atreus",
   "private": true,
   "scripts": {
-    "dev": "pnpm -r --parallel dev",
-    "build": "pnpm -r build",
+    "dev": "node init && pnpm -r --parallel dev",
+    "build": "node init && pnpm -r build",
     "lint": "pnpm -r lint",
     "clean": "pnpm -r clean",
-    "dev:frontend": "pnpm --filter atreus-frontend dev",
-    "dev:backend": "pnpm --filter atreus-backend dev",
-    "dev:contracts": "pnpm --filter atreus-contracts build"
+    "dev:frontend": "node init && pnpm --filter atreus-frontend dev",
+    "dev:backend": "node init && pnpm --filter atreus-backend dev",
+    "dev:contracts": "node init && pnpm --filter atreus-contracts build"
   },
   "engines": {
     "node": ">=18"
